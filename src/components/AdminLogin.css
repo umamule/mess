@@ -28,7 +28,7 @@
 .right-panel {
   flex: 1;
   background-color: #fff;
-  padding: 40px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
