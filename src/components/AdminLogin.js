@@ -7,7 +7,7 @@ function AdminLogin({ onLogin }) {
 
   const login = async () => {
     try {
-      const res = await axios.post(`https://server-w8vq.onrender.com/api/admin/login`, credentials);
+      const res = await axios.post('https://server-w8vq.onrender.com/api/admin/login', credentials);
       if (res.data.success) {
         onLogin(); // Show admin panel
       } else {
@@ -15,6 +15,7 @@ function AdminLogin({ onLogin }) {
       }
     } catch (error) {
       alert("Invalid login");
+      console.error("Login error:", error);
     }
   };
 
